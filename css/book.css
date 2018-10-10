@@ -1,0 +1,172 @@
+@font-face {
+	font-family: MontserratBold;
+	src: url(../fonts/MontserratBold.ttf);
+}
+
+
+/* All CSS styles go here */
+html,body {
+	width: 100%;
+	height:100%;
+	background-color: #003B00;
+}
+
+@keyframes fade {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes green_move {
+	50% { top: 330px;}
+	0% { top: 0px;}
+}
+
+@keyframes green_moves {
+	100% { left: 700px;}
+	
+}
+
+@keyframes green_movess {
+	100% { left: 900px;}
+
+}
+
+ @keyframes black_moves {
+	50% { bottom: -300px;}
+ }
+
+ @keyframes rotate {
+ 	100% { transform: rotate(360deg); }
+ }
+
+.cover {
+	width: 504px;
+	height: 600px;
+	background-color: #F0EAD6;
+	background-size: cover;
+	padding: 1.5em;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin-left: -252px;
+	margin-top: -300px;
+	box-sizing: border-box;
+	overflow: hidden;
+	box-shadow:  -6px 5px 2px 1px rgba(0,0,0,0.75);
+}
+
+
+.poster__header {
+ width: 38%;
+ margin-top: 29%;
+ float: left;
+ font-family: MontserratBold;
+ font-size: 16pt;
+ animation: fade 2s;
+}
+
+.poster__header__2 {
+	margin-top: 25%;
+   text-align: left;
+   overflow: hidden;
+   float: right;
+   font-size: 14pt;
+   animation: fade 2s;
+
+}
+
+.poster__header-title {
+	font-family: MontserratBold;
+	font-size: 16pt;
+	color: black;
+	line-height: 1;
+	margin-bottom: 20%;
+	animation: fade 2s;
+	
+	
+}
+
+
+.poster__header-subtitle {
+	font-family: MontserratBold;
+	font-size: 7pt;
+	line-height: 1.5;
+	margin-bottom: 50%;
+	animation: fade 2s;
+	
+}
+
+.poster__header-subtitle__2 {
+	font-family: MontserratBold;
+	font-size: 7pt;
+	line-height: 1.5;
+	animation: fade 2s;
+
+}
+
+div.a {
+    text-indent: 20px ;
+}
+
+
+
+.line {
+	border-left: green 20px solid;
+	height: 600px;
+	position: absolute;
+	top: 0px;
+	left: 150px;
+	animation: green_move 4s infinite cubic-bezier(0,0,1,1)
+}
+
+
+.line_2 {
+	border-left: green 20px solid;
+	height: 350px;
+	position: absolute;
+	transform: rotate(90deg);
+	left: 320px;
+	top: 20px;
+	animation: green_moves 2s alternate infinite cubic-bezier(0,0,1,1)
+	
+}
+
+
+.line_3 {
+	border-left: green 20px solid;
+	height: 350px;
+	position: absolute;
+	transform: rotate(90deg);
+	left: 320px;
+	top: 195px;
+	animation: green_movess 2s alternate infinite cubic-bezier(0,0,1,1)
+ }
+
+
+.line_4 {
+	border-left: black 20px solid;
+	height: 240px;
+	position: absolute;
+	bottom: 0px;
+	left: 339px;
+	animation: black_moves 4s infinite cubic-bezier(0,0,1,1)
+	}
+
+
+.line_5 {
+	border-left: black 20px solid;
+	height: 150px;
+	position: absolute;
+	transform: rotate(360deg);
+	top: 296px;
+	left: 65px;
+	transform: rotate(90deg);
+	transition: 0.5s;
+}
+
+.line_5:hover {
+	transform: rotate(360deg);
+	transition: 1s;
+}
+
+
